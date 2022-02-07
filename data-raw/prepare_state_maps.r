@@ -9,6 +9,7 @@ library(stringr)
 # https://github.com/wmurphyrd/fiftystater
 # devtools::install_github("wmurphyrd/fiftystater")
 library(fiftystater)
+library(btools)
 
 # take the file he created and put stabbr (state abbreviation) on it,
 # for easy linkage to other data
@@ -44,6 +45,8 @@ states49 %>%
   geom_polygon(color = "gray90", size = 0.1) +
   coord_map(projection = "albers", lat0 = 39, lat1 = 45) +
   guides(fill = "none")
+usethis::use_data(states49, states49)
+
 
 states51 %>%
   ggplot(aes(x = long, y = lat, group = group, fill = stabbr)) +
@@ -54,3 +57,6 @@ states51 %>%
   guides(fill = "none")
 
 # save(states49, states51, file = here::here("data", "bmaps.RData"))
+usethis::use_data(states51, states51)
+
+
