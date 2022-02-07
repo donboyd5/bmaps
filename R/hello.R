@@ -20,6 +20,7 @@ hello <- function() {
 
 # library(devtools)
 # use_git()
+# use_github()
 # use_r("strsplit1")
 # load_all()
 # check()
