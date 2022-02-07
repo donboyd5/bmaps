@@ -12,3 +12,4 @@ LazyData: true
 LazyDataCompression: bzip2
 URL: https://github.com/donboyd5/bmaps
 BugReports: https://github.com/donboyd5/bmaps/issues
+RoxygenNote: 7.1.2
